@@ -7,6 +7,9 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap" rel="stylesheet">
+    
   </head>
 
   <body>
@@ -29,13 +32,16 @@
             Splurting out advice on Gemini greatness since 1987 or whenever I started talking
         </div>
        
-        <div class ="col-5">
+        <div class ="col-5 links">
             <%= link_to 'Your 2 Cents', '#' %>
-            <%= link_to 'About', '#' %>
+            <%= link_to 'About Me', '#' %>
         </div>     
     </header>
+    <hr />
     
     <br class ="clear"/>
+    
+    
     
 <%= yield %>
 
