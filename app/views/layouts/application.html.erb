@@ -7,9 +7,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    
-    
-    
+      
   </head>
 
   <body>
@@ -30,20 +28,47 @@
         <div class = "col-4 slogan">
         
             Splurting out advice on Gemini greatness since 1987 or whenever I started talking
-        </div>
+      
+      </div>
        
         <div class ="col-5 links">
             <%= link_to 'Your 2 Cents', '#' %>
             <%= link_to 'About Me', '#' %>
-        </div>     
+        </div>   
+        
     </header>
+    
     <hr />
     
     <br class ="clear"/>
     
+    <div class = "container">
+    
+        <%= yield %>  
+        
+    </div>
     
     
-<%= yield %>
+    
+    <div class="footer">
+    
+        <div class="container">
+            <div class="row">
+            
+                <div class="col-6">
+                    <%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %> 
+                    
+                </div>
+             
+                <div class ="col-6 footer-blurb">
+                    Proudly hacked by <a href = "[YOUR_PORTFOLIO_URL]">Keara Harris in a city or island near you </a><br />
+                    
+                    Want to build your own Splurty Web App - <a href="https://online.bootcampspot.com"> Learn how to code here </a>
+               </div>
+            </div>
+        </div>
+    </div>
+
 
 </body>
   
